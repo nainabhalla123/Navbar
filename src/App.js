@@ -6,11 +6,11 @@ import {
   Switch
 } from 'react-router-dom';
 
-import About from './pages/About/About';
+import Events from './pages/Events/Events';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
-import Services from './pages/Service/Services';
-import Testimonial from './pages/Testimonial/Testimonial';
+import Courses from './pages/Courses/Courses';
+import CampusLeader from './pages/CampusLeader/CampusLeader';
 import Navbar from './Components/Navbar/Navbar';
 
 const App = () => {
@@ -22,16 +22,16 @@ const App = () => {
         <Route path="/" exact>
           <Home/>
         </Route>
-        <Route path="/about" exact>
-          <About/>
+        <Route path="/Events" exact>
+          <Events/>
         </Route>
-        <Route path="/service" exact>
-          <Services/>
+        <Route path="/Courses" exact>
+          <Courses/>
         </Route>
-        <Route path="/testimonial" exact>
-          <Testimonial/>
+        <Route path="/CampusLeader" exact>
+          <CampusLeader/>
         </Route>
-        <Route path="/contact" exact>
+        <Route path="/Contact" exact>
           <Contact/>
         </Route>
         <Redirect to="/" />
